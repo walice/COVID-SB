@@ -1,0 +1,1 @@
+cmd /c C:\Users\Alice\Anaconda3\condabin\conda.bat run "C:\Users\Alice\Anaconda3\python.exe" "C:\Users\Alice\Box Sync\PhD\Software\Python\COVID\COVID-SB\execute_notebook.py"
