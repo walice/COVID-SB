@@ -13076,6 +13076,12 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Daily-COVID-monitoring-data-for-Santa-Barbara-county">Daily COVID monitoring data for Santa Barbara county<a class="anchor-link" href="#Daily-COVID-monitoring-data-for-Santa-Barbara-county">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered celltag_remove_input">
 
 <div class="output_wrapper">
@@ -13103,10 +13109,10 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Daily tests (per 100,000)</th>
-      <th>Case rate (per 100,000)</th>
-      <th>Testing positivity (%)</th>
-      <th>Change in hospitalizations (%)</th>
+      <th>Daily tests (per 100,000)¹</th>
+      <th>Case rate (per 100,000)²</th>
+      <th>Testing positivity (%)³</th>
+      <th>Change in hospitalizations (%)⁴</th>
       <th>ICU beds available (%)</th>
       <th>Ventilators (available (%)</th>
     </tr>
@@ -13140,6 +13146,33 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notes:</p>
+<ol>
+<li>7 day average with a 7-day lag.</li>
+<li>14 day average.</li>
+<li>7 day average with a 7-day lag.</li>
+<li>Change in 3 day average.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Source: <a href="https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx">https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>See the code to scrape the data: <a href="https://github.com/walice/COVID-SB/">https://github.com/walice/COVID-SB/</a>.</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
