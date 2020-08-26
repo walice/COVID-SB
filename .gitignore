@@ -1,3 +1,7 @@
 credentials.json
 .ipynb_checkpoints
 commit_message.txt
+.env
+hash-password
+keys/
+setup.sh
