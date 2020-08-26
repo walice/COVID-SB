@@ -1,5 +1,5 @@
 PATH="/home/alice_lepissier/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
-* * * * * /usr/bin/python3 /home/alice_lepissier/COVID-SB/execute-notebook.py >> ~/cron.log 2>&1
+0 12 * * * /usr/bin/python3 /home/alice_lepissier/COVID-SB/execute-notebook.py >> ~/cron.log 2>&1
 # Edit this file to introduce tasks to be run by cron.
 # 
 # Each task to run has to be defined through a single line
