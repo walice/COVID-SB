@@ -18,10 +18,12 @@ Read more at <https://covid19.ca.gov/roadmap-counties/>.
 
 ## Technical details
 
-The project is set up as a Jupyter notebook which scrapes the California Department of Public Health website and automatically updates a Google Sheet through the [Google Sheets API](https://developers.google.com/sheets/api/quickstart/python). The notebook automatically pushes the change to GitHub, which is hosted using GitHub pages on <https://alicelepissier.com/COVID-SB/>. Finally, the repo contains an implementation to automatically run the notebook using Windows Task Scheduler. You could do achieve the same thing using cron on Mac or Linux.
+The project is set up as a Jupyter notebook which scrapes the California Department of Public Health website and automatically updates a Google Sheet through the [Google Sheets API](https://developers.google.com/sheets/api/quickstart/python). The notebook automatically pushes the change to GitHub, which is hosted using GitHub pages on <https://alicelepissier.com/COVID-SB/>. A cron job is set up to run automatically inside a Virtual Machine hosted by Google Cloud Platform. Finally, the repo also contains an implementation to automatically run the notebook using Windows Task Scheduler.
 
 ### Setting up the automation
 
-* Create a task which triggers `windows_scheduled_task.bat` every day at noon (or other) using Windows Task Scheduler.
-* This batch file will call `execute_notebook.py` in an Anaconda prompt. Update this to suit whatever Anaconda/Python set-up you have.
 * `execute_notebook.py` uses [papermill](https://github.com/nteract/papermill) to automate the execution of the Jupyter notebook.
+* If you are on Linux:
+  * Set up a cron job (type `crontab -e`) with the contents of `linux_crontab`. The job is set up to run every day at noon. Update this to reflect your directories and Python installation.
+* If you are on Windows:
+  * Create a task which triggers `windows_scheduled_task.bat` every day at noon (or other) using Windows Task Scheduler. This batch file will call `execute_notebook.py` in an Anaconda prompt. Again, update this to suit whatever Anaconda/Python set-up you have.
