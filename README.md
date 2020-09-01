@@ -1,3 +1,5 @@
+📣 Update: the state of California has changed the metrics it uses to monitor its response to COVID-19, so this project is 💤 retired as of 28 August 2020.
+
 # Scraping daily COVID metrics for Santa Barbara, CA
 
 This project scrapes the daily reopening metrics for the county of Santa Barbara from <https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx>.
