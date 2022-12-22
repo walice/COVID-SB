@@ -19,6 +19,9 @@ USER ${NB_USER}
 
 # Add modification code here
 
+# Upgrade Jupyter install
+RUN pip install --upgrade jupyter jupyter-core jupyter-console pyzmq tornado traitlets
+
 # Jupyter Notebook extensions
 RUN \
     pip install jupyter_contrib_nbextensions && \
